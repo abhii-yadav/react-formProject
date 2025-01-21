@@ -1,66 +1,183 @@
+/* Style for form container */
+.form-container {
+	max-width: 400px; /* Adjust width as needed */
+	margin: 0 auto; /* Center align */
+	padding: 20px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form groups */
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+/* Style for labels */
+.form-group label {
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+/* Style for submit button */
+.submit-btn {
+	width: 100%;
+	padding: 10px;
+	background-color: blue;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: darkblue;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .profile-container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile-header {
-    background: linear-gradient(to right, #ff416c, #8e54e9);
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  .warning {
-    color: yellow;
-  }
-  
-  .form-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  .full-width {
-    grid-column: span 3;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-  }
-  
-  .submit-btn {
-    margin-top: 20px;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  .warning {
-    background-color: red;
-    color: white; /* Optional: Makes the text easier to read on a red background */
-    padding: 2px 5px; /* Optional: Adds some spacing around the text */
-    border-radius: 3px; /* Optional: Gives the background slightly rounded corners */
-  }
-  
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+	margin: 0;
+	padding: 0;
+}
+
+.profile-container {
+	max-width: 900px;
+	margin: 20px auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+	background: linear-gradient(to right, #ff416c, #8e54e9);
+	color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.warning {
+	color: yellow;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.full-width {
+	grid-column: span 3;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+}
+
+.submit-btn {
+	margin-top: 20px;
+	padding: 10px;
+	background: #007bff;
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+.warning {
+	background-color: red;
+	color: white; /* Optional: Makes the text easier to read on a red background */
+	padding: 2px 5px; /* Optional: Adds some spacing around the text */
+	border-radius: 3px; /* Optional: Gives the background slightly rounded corners */
+}
+
+.required {
+	color: red;
+	font-weight: bold;
+}
+
+/* General Grid Layout */
+.form-grid {
+	display: grid;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+/* Specific Layouts */
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr); /* First Name, Middle Name, Last Name */
+}
+
+.grid-2 {
+	grid-template-columns: repeat(2, 1fr); /* Email, Phone */
+}
+
+.grid-4 {
+	grid-template-columns: repeat(4, 1fr); /* Pin Code, Country, State, City */
+}
+
+/* Full width for address */
+.full-width {
+	grid-column: span 3; /* Ensures address takes full row */
+}
+
+/* Form Group */
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Label */
+.form-group label {
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+/* Required Star */
+.required {
+	color: red;
+	font-weight: bold;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+/* Error Messages */
+.error {
+	color: red;
+	font-size: 12px;
+}
+
+
+
+
